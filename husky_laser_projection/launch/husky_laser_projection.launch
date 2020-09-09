@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+	<arg name="robot_prefix" default="husky"/>
+
+	<node pkg="husky_laser_projection" type="husky_laser_projection" name="husky_laser_projection" output="screen">
+		<param name="laser_scan_topic_name" value="/scan"/>
+		<param name="cloud_topic_name" value="/sim_cloud"/>
+		<param name="tf_extrapolation_limit" value="0.1"/>
+		<param name="target_frame_name" value="laser_link"/>
+	</node>
+</launch>

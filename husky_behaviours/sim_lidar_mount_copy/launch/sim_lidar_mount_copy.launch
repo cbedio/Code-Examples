@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="sim_lidar_mount_copy" type="sim_lidar_mount_copy" name="sim_lidar_mount_copy" output="screen">
+        <param name="stepper_joint_topic_name" value="/joint_states" />
+        <param name="command_topic_name" value="/husky_joint_position_controller/command" />
+    </node>
+</launch>

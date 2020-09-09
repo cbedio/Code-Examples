@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="ros_ustepper" type="ros_ustepper" name="ros_ustepper" respawn="false" output="screen">
+		<!--param name="joint_states_topic_name" value="/joint_states" /-->
+        <param name="stepper_encoder_topic_name" value="/stepper_encoder" />
+        <param name="stepper_joint_topic_name" value="/joint_states" />
+    </node>
+</launch>

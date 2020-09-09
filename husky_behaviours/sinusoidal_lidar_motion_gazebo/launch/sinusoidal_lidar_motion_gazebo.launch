@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <node pkg="sinusoidal_lidar_motion_gazebo" type="sinusoidal_lidar_motion_gazebo" name="sinusoidal_lidar_motion_gazebo" output="screen">
+        <param name="angle_max" type="double" value="3.14"/>
+        <param name="angle_min" type="double" value="0" />
+        <param name="steps" type="int" value="2000" />
+    </node>
+
+</launch>

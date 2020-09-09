@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+	<arg name="robot_prefix" default="husky"/>
+
+	<node pkg="husky_sim_lidar_pan_behaviour" type="husky_sim_lidar_pan_behaviour" name="husky_sim_lidar_pan_behaviour" output="screen">
+		<param name="pan_speed" value="1"/>
+		<param name="parent_link_name" value="/bottom_lidar_mount_link"/>
+		<param name="child_link_name" value="/top_lidar_mount_link"/>
+		<param name="max_angle" value="1.569"/>
+		<param name="min_angle" value="-1.569"/>
+		<param name="frequency" value="100"/>
+		<param name="lidar_cmd_topic_name" value="/husky_lidar_velocity_controller/command"/>
+	</node>	
+
+</launch>
